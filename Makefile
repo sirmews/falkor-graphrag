@@ -1,20 +1,21 @@
+
+
 # Colors for better visibility
 CYAN := \033[36m
 GREEN := \033[32m
 RED := \033[31m
 RESET := \033[0m
 
-
 # Default make command
 all: help
 
-## dev: Run the project
+## dev: Run the project with vercel-cli
 dev:
-	bun dev
+	bunx vercel dev
 
 ## build: Build the project
 build:
-	bun build ./index.ts --outdir ./build --target node
+	bunx vercel build
 
 ## help: Show a list of commands
 help : Makefile
