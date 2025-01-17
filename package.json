@@ -1,12 +1,14 @@
 {
   "name": "falkor-server",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot api/index.ts"
   },
   "dependencies": {
+    "falkordb": "^6.2.7",
     "hono": "^4.6.16"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "vercel": "^39.3.0"
   }
 }
